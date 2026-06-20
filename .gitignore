@@ -1,0 +1,10 @@
+.playwright-mcp/
+screenshots/
+references/
+liu-*.png
+
+assets/er-microscopy.png
+assets/molecular-er-reference.png
+
+.DS_Store
+Thumbs.db

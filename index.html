@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Independent academic lab website prototype for the Liu Lab, focused on ER redox homeostasis, glutathione transport and organelle metabolism."
+    />
+    <title>Liu Lab | Organelle Redox Biology</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar" data-nav>
+      <a class="brand" href="#home" aria-label="Liu Lab home">
+        <span>
+          <strong>Liu Lab</strong>
+          <em>Organelle redox biology</em>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#program">Program</a>
+        <a href="#publications">Publications</a>
+        <a href="#people">People</a>
+        <a href="#join">Join</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <video
+            src="assets/molecular-er-hero-motion.mp4"
+            poster="assets/molecular-er-hero.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Independent lab site / Yale affiliation placeholder</p>
+            <h1>Organelle redox control and protein maturation.</h1>
+            <p class="hero-lede">
+              The Liu Lab studies how organelles move, buffer and sense glutathione, with a focus
+              on SLC33A1-mediated oxidized glutathione export from the endoplasmic reticulum.
+            </p>
+            <div class="hero-actions" aria-label="Primary calls to action">
+              <a class="button primary" href="#research">Research</a>
+              <a class="button secondary" href="#publications">Publications</a>
+              <a class="button secondary" href="#join">Join</a>
+            </div>
+            <dl class="hero-facts" aria-label="Research facts">
+              <div>
+                <dt>SLC33A1</dt>
+                <dd>ER GSSG export</dd>
+              </div>
+              <div>
+                <dt>GSSG:GSH</dt>
+                <dd>Redox balance</dd>
+              </div>
+              <div>
+                <dt>ERAD / UPR</dt>
+                <dd>Proteostasis outcomes</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Research position</p>
+          <h2>Transporters help set the chemical state of organelles.</h2>
+          <p>
+            The attached Nature Cell Biology paper identifies SLC33A1 as a major ER oxidized
+            glutathione exporter. This prototype builds the lab story around that mechanism:
+            organelle purification, redox metabolomics, genetic screening, transport biochemistry,
+            structure and cell-state consequences.
+          </p>
+        </div>
+        <div class="summary-grid" id="summary-grid"></div>
+      </section>
+
+      <section class="section program-section" id="program">
+        <div class="section-heading">
+          <p class="eyebrow">Research program</p>
+          <h2>Discovery systems for compartment-specific metabolism.</h2>
+          <p>
+            Shanshan's program sketches clarify the broader direction: connect ER protein
+            homeostasis to metabolite homeostasis, use genetics to discover transport and
+            regulation, and extend ER-tagging into tissue and disease contexts.
+          </p>
+        </div>
+        <div class="program-layout">
+          <div class="program-grid" id="program-grid"></div>
+          <aside class="broll-card" id="broll-card"></aside>
+        </div>
+      </section>
+
+      <section class="scrolly-section" aria-labelledby="process-title">
+        <div class="process-stage">
+          <div class="process-copy">
+            <div class="process-heading">
+              <p class="eyebrow">SLC33A1 mechanism</p>
+              <h2 id="process-title">From ER profiling to redox stress.</h2>
+              <p>
+                The flagship paper connects a method, a genetic hit, direct transport activity,
+                structural mechanism and cellular stress phenotypes. This section keeps that logic
+                visible instead of using decorative molecular animation.
+              </p>
+            </div>
+            <div class="process-steps" id="process-steps"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Research themes grounded in current work.</h2>
+          <p>
+            The first version emphasizes supported research directions rather than broad claims:
+            ER glutathione export, organelle metabolomics, transporter mechanism, proteostasis and
+            related mitochondrial glutathione biology.
+          </p>
+        </div>
+        <div class="research-list" id="research-grid"></div>
+      </section>
+
+      <section class="section publication-section" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Selected publications.</h2>
+          <p>
+            The SLC33A1 paper is PDF-verified locally. The full publication list should still be
+            reconciled against Scholar, ORCID, PubMed or a CV export.
+          </p>
+        </div>
+        <div class="publication-list" id="publication-list"></div>
+      </section>
+
+      <section class="section people-section" id="people">
+        <div class="section-heading">
+          <p class="eyebrow">People</p>
+          <h2>A PI-centered launch page that can grow cleanly.</h2>
+        </div>
+        <div class="people-layout" id="people-grid"></div>
+      </section>
+
+      <section class="join-section" id="join">
+        <div class="join-inner">
+          <div class="join-copy">
+            <p class="eyebrow">Join us</p>
+          <h2>Join a new lab studying organelle metabolism and redox stress.</h2>
+            <p>
+              Our lab welcomes applications from research assistants, postdoctoral fellows, graduate
+              students, and summer students. Interested candidates should email
+              <a href="mailto:yale.email@yale.edu">yale.email@yale.edu</a> with a CV and a brief
+              description of their research interests.
+            </p>
+            <div class="join-actions">
+              <a class="button primary" href="mailto:yale.email@yale.edu?subject=Liu%20Lab%20application">Email the lab</a>
+              <a class="button secondary disabled-link" href="#" aria-disabled="true">Yale job posting coming soon</a>
+            </div>
+          </div>
+          <div class="role-grid" id="role-grid"></div>
+        </div>
+      </section>
+
+      <section class="section news-section" id="news">
+        <div class="section-heading">
+          <p class="eyebrow">News</p>
+          <h2>Lab updates.</h2>
+        </div>
+        <div class="news-list" id="news-grid"></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>For applicants, collaborators and funders.</h2>
+          <p>
+            Add the confirmed Yale email, department, building and profile links when available.
+            This independent site does not use Yale logos or imply official Yale ownership.
+          </p>
+        </div>
+        <div class="contact-card" id="contact-card"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Liu Lab independent website prototype. Yale affiliation is mentioned factually; this is not
+        an official Yale website.
+      </p>
+      <a href="#home" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="content/site-content.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
