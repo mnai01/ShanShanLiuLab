@@ -974,8 +974,8 @@ p {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 78%, rgba(3, 8, 7, 0.78) 92%, rgba(7, 17, 15, 0.52) 100%),
-      linear-gradient(180deg, rgba(7, 17, 15, 0.18) 0%, rgba(7, 17, 15, 0.66) 100%);
+      linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.9) 42%, rgba(3, 8, 7, 0.56) 68%, rgba(7, 17, 15, 0.18) 100%),
+      linear-gradient(180deg, rgba(7, 17, 15, 0.26) 0%, rgba(7, 17, 15, 0.5) 100%);
   }
 
   .summary-grid,
@@ -1026,7 +1026,7 @@ p {
 
   .hero,
   .hero-inner {
-    min-height: 770px;
+    min-height: 820px;
   }
 
   .hero-inner {
@@ -1035,8 +1035,15 @@ p {
     padding-top: 112px;
   }
 
-  .hero-media img {
-    object-position: 67% 50%;
+  .hero-media video {
+    object-position: 72% 50%;
+    opacity: 0.88;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.95) 40%, rgba(0, 0, 0, 0.62) 55%, rgba(0, 0, 0, 0.14) 100%),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.22) 66%, rgba(0, 0, 0, 0.04) 100%);
   }
 
   h1 {
