@@ -29,8 +29,8 @@
         <i data-lucide="menu"></i>
       </button>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#research">Research</a>
         <a href="#program">Program</a>
+        <a href="#mechanism">Mechanism</a>
         <a href="#publications">Publications</a>
         <a href="#people">People</a>
         <a href="#join">Join</a>
@@ -61,7 +61,7 @@
               on SLC33A1-mediated oxidized glutathione export from the endoplasmic reticulum.
             </p>
             <div class="hero-actions" aria-label="Primary calls to action">
-              <a class="button primary" href="#research">Research</a>
+              <a class="button primary" href="#program">Program</a>
               <a class="button secondary" href="#publications">Publications</a>
               <a class="button secondary" href="#join">Join</a>
             </div>
@@ -114,34 +114,35 @@
         <div class="program-pyramid" id="program-grid"></div>
       </section>
 
-      <section class="scrolly-section" aria-labelledby="process-title">
+      <section class="scrolly-section" id="mechanism" aria-labelledby="process-title">
         <div class="process-stage">
-          <div class="process-copy">
+          <div class="process-layout">
             <div class="process-heading">
               <p class="eyebrow">SLC33A1 mechanism</p>
-              <h2 id="process-title">From ER profiling to redox stress.</h2>
+              <h2 id="process-title">From ER-IP to transporters.</h2>
               <p>
                 The flagship paper connects a method, a genetic hit, direct transport activity,
-                structural mechanism and cellular stress phenotypes. This section keeps that logic
-                visible instead of using decorative molecular animation.
+                structural mechanism and cellular stress phenotypes. The rotating video runs beside
+                the sequence as a compact visual anchor.
               </p>
             </div>
+            <aside class="process-media" aria-label="ER-IP process video">
+              <video
+                id="process-video"
+                src="assets/erip-transporters-process.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
+              <div class="process-media-caption">
+                ER-IP visual sequence for transporter discovery and organelle profiling.
+              </div>
+            </aside>
             <div class="process-steps" id="process-steps"></div>
           </div>
         </div>
-      </section>
-
-      <section class="section" id="research">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Research themes grounded in current work.</h2>
-          <p>
-            The first version emphasizes supported research directions rather than broad claims:
-            ER glutathione export, organelle metabolomics, transporter mechanism, proteostasis and
-            related mitochondrial glutathione biology.
-          </p>
-        </div>
-        <div class="research-list" id="research-grid"></div>
       </section>
 
       <section class="section publication-section" id="publications">

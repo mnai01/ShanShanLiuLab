@@ -150,7 +150,7 @@ window.LAB_CONTENT = {
       image: "assets/research-program-homeostasis.webp",
       fallback: "assets/research-program-homeostasis.jpg",
       alt: "Diagram showing balance between protein homeostasis and metabolite homeostasis in the ER.",
-      link: "#research",
+      link: "#program",
       body:
         "A high-level model for how ER translation, folding, glycosylation, secretion, transporters, enzymes and metabolites are balanced."
     },
@@ -160,7 +160,7 @@ window.LAB_CONTENT = {
       image: "assets/research-program-genetics.webp",
       fallback: "assets/research-program-genetics.jpg",
       alt: "Diagram showing reverse genetics with Cas9, ER-IP and metabolomics, and forward genetics with microbial enzymes and genetic screening.",
-      link: "#research",
+      link: "#program",
       body:
         "A discovery loop connecting Cas9 perturbation, ER-IP metabolomics, microbe-derived enzymes and genetic screens."
     },
@@ -170,7 +170,7 @@ window.LAB_CONTENT = {
       image: "assets/research-program-panerama.webp",
       fallback: "assets/research-program-panerama.jpg",
       alt: "Diagram labeled PanERama showing conditional ER tag and Cre driver strategy across disease progression.",
-      link: "#research",
+      link: "#program",
       body:
         "A future-facing ER-tag strategy for following tissue and disease progression contexts such as steatosis and neurodegeneration."
     }
@@ -202,22 +202,18 @@ window.LAB_CONTENT = {
       featured: true
     },
     {
-      title: "Protocols for analyzing metabolic derangements caused by increased NADH/NAD+ ratio in cell lines and in mice",
-      authors: "Shanshan Liu, Yan Ma, Hui Jiang",
-      journal: "STAR Protocols",
-      year: "2022",
-      doi: "10.1016/j.xpro.2021.101120",
-      source: "DOI record",
-      link: "https://www.cell.com/star-protocols/fulltext/S2666-1667(21)00826-1"
-    },
-    {
       title: "Glycerol-3-phosphate biosynthesis regenerates cytosolic NAD+ to alleviate mitochondrial disease",
       authors: "Shanshan Liu, Song Fu, Guodong Wang, Yu Cao, et al.",
       journal: "Cell Metabolism",
       year: "2021",
       doi: "10.1016/j.cmet.2021.06.013",
       source: "DOI record",
-      link: "https://doi.org/10.1016/j.cmet.2021.06.013"
+      link: "https://doi.org/10.1016/j.cmet.2021.06.013",
+      image: {
+        src: "assets/publication-cell-metabolism-2021-cover.webp",
+        fallback: "assets/publication-cell-metabolism-2021-cover.jpg",
+        alt: "Cell Metabolism cover image associated with the 2021 glycerol-3-phosphate publication."
+      }
     }
   ],
   people: [

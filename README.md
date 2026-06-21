@@ -59,7 +59,9 @@ Google Scholar was not fully machine-readable in this environment. The publicati
 - `references/22-49-3_Beads_035.tif`: original lab-provided ER pulldown beads TIF from Shanshan.
 - `assets/beads-microscopy-crop.webp` and `.jpg`: cropped, web-optimized versions used as the Join section background.
 - `assets/erip-beads-*.webp` and `.jpg`: cropped, web-optimized ER-IP bead microscopy slideshow images generated from lab-provided TIFs. The bottom microscope metadata strip was removed for web presentation.
+- `assets/erip-transporters-process.mp4`: muted, web-optimized ER-IP process video used in the SLC33A1 mechanism section.
 - `assets/publication-slc33a1-sketch.webp` and `.jpg`: web-optimized publication preview sketch for the featured 2026 SLC33A1 paper.
+- `assets/publication-cell-metabolism-2021-cover.webp` and `.jpg`: web-optimized cover preview for the 2021 Cell Metabolism paper.
 - `references/research-program-*.jpeg`: Shanshan-provided research-direction sketches.
 - `assets/research-program-*.webp`: optimized web versions used in the Research Program section.
 - `assets/er-microscopy.png`: earlier microscopy placeholder retained locally but no longer primary.
