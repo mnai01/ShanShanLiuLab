@@ -194,6 +194,11 @@ window.LAB_CONTENT = {
       doi: "10.1038/s41556-026-01922-y",
       source: "PDF verified",
       link: "https://www.nature.com/articles/s41556-026-01922-y",
+      image: {
+        src: "assets/publication-slc33a1-sketch.webp",
+        fallback: "assets/publication-slc33a1-sketch.jpg",
+        alt: "Sketch-style cover concept image associated with the SLC33A1 publication."
+      },
       featured: true
     },
     {

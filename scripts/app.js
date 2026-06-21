@@ -90,9 +90,17 @@
       .map(
         (paper) => `
         <a class="publication-card ${paper.featured ? "featured" : ""}" href="${paper.link}" target="_blank" rel="noreferrer">
-          <div>
+          <div class="publication-meta">
             <div class="publication-year">${paper.year}</div>
             <div class="publication-source">${paper.source}</div>
+            ${
+              paper.image
+                ? `<picture class="publication-preview">
+                    <source srcset="${paper.image.src}" type="image/webp" />
+                    <img src="${paper.image.fallback}" alt="${paper.image.alt}" loading="lazy" />
+                  </picture>`
+                : ""
+            }
           </div>
           <div>
             <h3>${paper.title}</h3>

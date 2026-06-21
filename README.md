@@ -59,6 +59,7 @@ Google Scholar was not fully machine-readable in this environment. The publicati
 - `references/22-49-3_Beads_035.tif`: original lab-provided ER pulldown beads TIF from Shanshan.
 - `assets/beads-microscopy-crop.webp` and `.jpg`: cropped, web-optimized versions used as the Join section background.
 - `assets/erip-beads-*.webp` and `.jpg`: cropped, web-optimized ER-IP bead microscopy slideshow images generated from lab-provided TIFs. The bottom microscope metadata strip was removed for web presentation.
+- `assets/publication-slc33a1-sketch.webp` and `.jpg`: web-optimized publication preview sketch for the featured 2026 SLC33A1 paper.
 - `references/research-program-*.jpeg`: Shanshan-provided research-direction sketches.
 - `assets/research-program-*.webp`: optimized web versions used in the Research Program section.
 - `assets/nigms-cell-division-death.mp4`: prototype B-roll candidate from NIGMS Image and Video Gallery ID 6790.
