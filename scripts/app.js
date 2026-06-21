@@ -43,10 +43,8 @@
       )
       .join("");
 
-    document.querySelector("#program-grid").innerHTML = content.programImages
-      .map(
-        (item) => `
-        <a class="program-card" href="${item.link}">
+    const renderProgramCard = (item, isPrimary = false) => `
+        <a class="program-card ${isPrimary ? "program-card-primary" : ""}" href="${item.link}">
           <picture>
             <source srcset="${item.image}" type="image/webp" />
             <img src="${item.fallback}" alt="${item.alt}" loading="lazy" />
@@ -58,17 +56,17 @@
             <strong>View related research</strong>
           </div>
         </a>
-      `
-      )
-      .join("");
+      `;
 
-    document.querySelector("#broll-card").innerHTML = `
-      <video src="${content.broll.video}" autoplay muted loop playsinline preload="metadata"></video>
-      <div>
-        <span>${content.broll.source}</span>
-        <h3>${content.broll.title}</h3>
-        <p>${content.broll.body}</p>
-        <a href="${content.broll.link}" target="_blank" rel="noreferrer">${content.broll.license} / ${content.broll.credit}</a>
+    const [primaryProgram, ...secondaryPrograms] = content.programImages;
+    document.querySelector("#program-grid").innerHTML = `
+      <div class="program-top">${renderProgramCard(primaryProgram, true)}</div>
+      <div class="program-branches" aria-hidden="true">
+        <span class="program-branch program-branch-left"></span>
+        <span class="program-branch program-branch-right"></span>
+      </div>
+      <div class="program-bottom">
+        ${secondaryPrograms.map((item) => renderProgramCard(item)).join("")}
       </div>
     `;
 

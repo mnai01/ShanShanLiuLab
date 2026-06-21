@@ -372,7 +372,6 @@ p {
 
 .research-card,
 .program-card,
-.broll-card,
 .publication-card,
 .person-card,
 .role-card,
@@ -436,17 +435,20 @@ p {
   background: #f2efe6;
 }
 
-.program-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 14px;
-  align-items: stretch;
+.program-pyramid {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.program-grid {
+.program-top {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  justify-items: center;
+}
+
+.program-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
 }
 
 .program-card {
@@ -454,6 +456,54 @@ p {
   background: rgba(255, 250, 241, 0.9);
   color: inherit;
   transition: border-color 160ms ease, background 160ms ease;
+}
+
+.program-card-primary {
+  width: min(620px, 100%);
+}
+
+.program-branches {
+  position: relative;
+  height: 78px;
+}
+
+.program-branch {
+  position: absolute;
+  top: 34px;
+  width: 14%;
+  height: 1px;
+  background: rgba(28, 129, 114, 0.32);
+  transform-origin: center;
+}
+
+.program-branch::after {
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid rgba(28, 129, 114, 0.48);
+  border-right: 1px solid rgba(28, 129, 114, 0.48);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.program-branch-left {
+  left: 36%;
+  transform: rotate(-17deg);
+  transform-origin: right center;
+}
+
+.program-branch-left::after {
+  right: auto;
+  left: -1px;
+  transform: rotate(225deg);
+}
+
+.program-branch-right {
+  right: 36%;
+  transform: rotate(17deg);
+  transform-origin: left center;
 }
 
 .program-card:hover,
@@ -473,18 +523,20 @@ p {
 
 .program-card img {
   width: 100%;
-  height: 190px;
+  height: 240px;
   object-fit: contain;
   padding: 12px;
 }
 
-.program-card div,
-.broll-card div {
+.program-card-primary img {
+  height: 280px;
+}
+
+.program-card div {
   padding: 18px;
 }
 
-.program-card span,
-.broll-card span {
+.program-card span {
   color: var(--teal);
   font-size: 11px;
   font-weight: 850;
@@ -492,8 +544,7 @@ p {
   text-transform: uppercase;
 }
 
-.program-card h3,
-.broll-card h3 {
+.program-card h3 {
   margin-top: 10px;
   font-family: "Inter", system-ui, sans-serif;
   font-size: 17px;
@@ -501,8 +552,7 @@ p {
   line-height: 1.25;
 }
 
-.program-card p,
-.broll-card p {
+.program-card p {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.58;
@@ -515,32 +565,6 @@ p {
   color: var(--teal);
   font-size: 12px;
   font-weight: 850;
-}
-
-.broll-card {
-  overflow: hidden;
-  background: var(--ink);
-  color: #fff;
-}
-
-.broll-card video {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  opacity: 0.86;
-}
-
-.broll-card p {
-  color: rgba(255, 255, 255, 0.66);
-}
-
-.broll-card a {
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--aqua);
-  font-size: 12px;
-  font-weight: 750;
-  line-height: 1.5;
 }
 
 .process-stage {
@@ -1059,8 +1083,7 @@ p {
   }
 
   .erip-platform-layout,
-  .program-layout,
-  .program-grid,
+  .program-pyramid,
   .research-list,
   .process-copy,
   .people-layout,
@@ -1083,6 +1106,19 @@ p {
 
   .erip-slideshow {
     grid-column: auto;
+  }
+
+  .program-pyramid {
+    max-width: 620px;
+  }
+
+  .program-bottom {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .program-branches {
+    display: none;
   }
 
   .publication-card {
@@ -1259,12 +1295,9 @@ p {
     text-align: left;
   }
 
-  .program-card img {
+  .program-card img,
+  .program-card-primary img {
     height: 210px;
-  }
-
-  .broll-card video {
-    height: 220px;
   }
 
   .process-steps {

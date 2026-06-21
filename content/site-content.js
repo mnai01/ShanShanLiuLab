@@ -175,16 +175,6 @@ window.LAB_CONTENT = {
         "A future-facing ER-tag strategy for following tissue and disease progression contexts such as steatosis and neurodegeneration."
     }
   ],
-  broll: {
-    title: "Cell dynamics reference",
-    source: "NIGMS Image and Video Gallery ID 6790",
-    credit: "Dylan T. Burnette, Vanderbilt University School of Medicine / NIGMS",
-    license: "CC BY-NC-SA 3.0",
-    video: "assets/nigms-cell-division-death.mp4",
-    link: "https://nigms.nih.gov/image-gallery/6790",
-    body:
-      "A confocal microscopy reference showing mitosis and programmed cell death. It can be replaced by lab-owned organelle or cell-dynamics footage when available."
-  },
   publications: [
     {
       title: "SLC33A1 exports oxidized glutathione to maintain endoplasmic reticulum redox homeostasis",

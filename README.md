@@ -62,12 +62,9 @@ Google Scholar was not fully machine-readable in this environment. The publicati
 - `assets/publication-slc33a1-sketch.webp` and `.jpg`: web-optimized publication preview sketch for the featured 2026 SLC33A1 paper.
 - `references/research-program-*.jpeg`: Shanshan-provided research-direction sketches.
 - `assets/research-program-*.webp`: optimized web versions used in the Research Program section.
-- `assets/nigms-cell-division-death.mp4`: prototype B-roll candidate from NIGMS Image and Video Gallery ID 6790.
-- `assets/er-microscopy.png`: earlier NIH/NIGMS microscopy placeholder retained but no longer primary.
+- `assets/er-microscopy.png`: earlier microscopy placeholder retained locally but no longer primary.
 
 Confirm rights and preferred attribution language for user-provided images before public deployment.
-
-The NIGMS video candidate is licensed CC BY-NC-SA 3.0 and credited to Dylan T. Burnette, Vanderbilt University School of Medicine / NIGMS. Confirm that this license is acceptable before public use on a final deployed site.
 
 ## Future Next.js or Astro Migration
 
