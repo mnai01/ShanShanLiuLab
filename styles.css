@@ -1036,14 +1036,18 @@ p {
   }
 
   .hero-media video {
-    object-position: 72% 50%;
-    opacity: 0.88;
+    object-position: 74% 50%;
+    opacity: 0.82;
   }
 
   .hero::before {
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.95) 40%, rgba(0, 0, 0, 0.62) 55%, rgba(0, 0, 0, 0.14) 100%),
-      linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.22) 66%, rgba(0, 0, 0, 0.04) 100%);
+      linear-gradient(90deg, rgba(0, 0, 0, 0.99) 0%, rgba(0, 0, 0, 0.96) 52%, rgba(0, 0, 0, 0.5) 76%, rgba(0, 0, 0, 0.06) 100%),
+      linear-gradient(180deg, rgba(7, 17, 15, 0.1) 0%, rgba(7, 17, 15, 0.26) 100%);
+  }
+
+  .hero-copy {
+    width: min(320px, 82vw);
   }
 
   h1 {
