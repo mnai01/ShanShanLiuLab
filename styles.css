@@ -974,7 +974,7 @@ p {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.9) 42%, rgba(3, 8, 7, 0.56) 68%, rgba(7, 17, 15, 0.18) 100%),
+      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 50%, rgba(0, 0, 0, 0.66) 74%, rgba(0, 0, 0, 0.48) 100%),
       linear-gradient(180deg, rgba(7, 17, 15, 0.26) 0%, rgba(7, 17, 15, 0.5) 100%);
   }
 
@@ -1042,7 +1042,7 @@ p {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 0.99) 0%, rgba(0, 0, 0, 0.96) 52%, rgba(0, 0, 0, 0.5) 76%, rgba(0, 0, 0, 0.06) 100%),
+      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 50%, rgba(0, 0, 0, 0.66) 74%, rgba(0, 0, 0, 0.48) 100%),
       linear-gradient(180deg, rgba(7, 17, 15, 0.1) 0%, rgba(7, 17, 15, 0.26) 100%);
   }
 
