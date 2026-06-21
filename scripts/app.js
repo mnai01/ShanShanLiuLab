@@ -10,16 +10,24 @@
   }
 
   function renderContent() {
-    document.querySelector("#summary-grid").innerHTML = content.studySummaries
-      .map(
-        (item) => `
-        <article class="summary-card">
-          <h3>${item.title}</h3>
-          <p>${item.body}</p>
-        </article>
-      `
-      )
-      .join("");
+    document.querySelector("#erip-slideshow").innerHTML = `
+      <div class="erip-slide-frame">
+        ${content.eripSlides
+          .map(
+            (slide, index) => `
+            <figure class="erip-slide ${index === 0 ? "is-active" : ""}" data-slide-index="${index}">
+              <a href="${slide.fallback}" target="_blank" rel="noreferrer" aria-label="Open ${slide.label}">
+                <picture>
+                  <source srcset="${slide.image}" type="image/webp" />
+                  <img src="${slide.fallback}" alt="${slide.alt}" loading="${index === 0 ? "eager" : "lazy"}" />
+                </picture>
+              </a>
+            </figure>
+          `
+          )
+          .join("")}
+      </div>
+    `;
 
     document.querySelector("#research-grid").innerHTML = content.researchThemes
       .map(
@@ -171,8 +179,34 @@
     });
   }
 
+  function initEripSlideshow() {
+    const root = document.querySelector("#erip-slideshow");
+    if (!root) return;
+
+    const slides = Array.from(root.querySelectorAll(".erip-slide"));
+    if (slides.length < 2) return;
+
+    let activeIndex = 0;
+    let timerId = null;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const setActive = (index) => {
+      activeIndex = index;
+      slides.forEach((slide, slideIndex) => slide.classList.toggle("is-active", slideIndex === activeIndex));
+    };
+
+    const queueNext = () => {
+      if (prefersReducedMotion) return;
+      window.clearInterval(timerId);
+      timerId = window.setInterval(() => setActive((activeIndex + 1) % slides.length), 4200);
+    };
+
+    queueNext();
+  }
+
   renderContent();
   initNav();
+  initEripSlideshow();
 
   document.querySelectorAll("video[autoplay]").forEach((video) => {
     video.muted = true;

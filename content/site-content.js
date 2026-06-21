@@ -99,16 +99,48 @@ window.LAB_CONTENT = {
       link: "https://www.nature.com/articles/s41556-026-01922-y"
     }
   ],
-  studySummaries: [
+  eripSlides: [
     {
-      title: "Plain English",
-      body:
-        "Cells keep different chemical conditions inside each organelle. The lab studies how organelles move glutathione and related metabolites so proteins fold correctly and stress responses stay controlled."
+      label: "ER-IP beads 035",
+      image: "assets/erip-beads-035.webp",
+      fallback: "assets/erip-beads-035.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 035."
     },
     {
-      title: "Technical",
-      body:
-        "The program links organelle immunopurification, metabolomics, CRISPR screens, transport assays, cryo-EM and redox proteomics to identify metabolite transporters and define how compartment-specific redox balance controls proteostasis."
+      label: "ER-IP beads 040",
+      image: "assets/erip-beads-040.webp",
+      fallback: "assets/erip-beads-040.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 040."
+    },
+    {
+      label: "ER-IP beads 042",
+      image: "assets/erip-beads-042.webp",
+      fallback: "assets/erip-beads-042.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 042."
+    },
+    {
+      label: "ER-IP beads 053",
+      image: "assets/erip-beads-053.webp",
+      fallback: "assets/erip-beads-053.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 053."
+    },
+    {
+      label: "ER-IP beads 057",
+      image: "assets/erip-beads-057.webp",
+      fallback: "assets/erip-beads-057.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 057."
+    },
+    {
+      label: "ER-IP beads 058",
+      image: "assets/erip-beads-058.webp",
+      fallback: "assets/erip-beads-058.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 058."
+    },
+    {
+      label: "ER-IP beads 060",
+      image: "assets/erip-beads-060.webp",
+      fallback: "assets/erip-beads-060.jpg",
+      alt: "Electron microscopy image of an ER immunopurification bead sample, field 060."
     }
   ],
   programImages: [

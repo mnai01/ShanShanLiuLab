@@ -58,6 +58,7 @@ Google Scholar was not fully machine-readable in this environment. The publicati
 - `assets/molecular-er-hero-motion.mp4`: user-provided silent motion hero video.
 - `references/22-49-3_Beads_035.tif`: original lab-provided ER pulldown beads TIF from Shanshan.
 - `assets/beads-microscopy-crop.webp` and `.jpg`: cropped, web-optimized versions used as the Join section background.
+- `assets/erip-beads-*.webp` and `.jpg`: cropped, web-optimized ER-IP bead microscopy slideshow images generated from lab-provided TIFs. The bottom microscope metadata strip was removed for web presentation.
 - `references/research-program-*.jpeg`: Shanshan-provided research-direction sketches.
 - `assets/research-program-*.webp`: optimized web versions used in the Research Program section.
 - `assets/nigms-cell-division-death.mp4`: prototype B-roll candidate from NIGMS Image and Video Gallery ID 6790.
