@@ -264,7 +264,7 @@ window.LAB_CONTENT = {
     }
   ],
   contact: [
-    ["Email", "yale.email@yale.edu", "mailto:yale.email@yale.edu"],
+    ["Email", "shanshan.liu@yale.edu", "mailto:shanshan.liu@yale.edu"],
     ["Affiliation", "Yale University affiliation placeholder", null],
     ["Google Scholar", "Scholar profile", "https://scholar.google.com/citations?user=nDvllAYAAAAJ&hl=en"],
     ["ORCID", "0000-0001-8293-1025", "https://orcid.org/0000-0001-8293-1025"],
