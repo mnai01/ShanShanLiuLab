@@ -429,6 +429,116 @@ p {
   filter: contrast(1.02) brightness(0.98);
 }
 
+.erip-control {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  transform: translateY(-50%);
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 3px;
+  color: #fff;
+  background: rgba(7, 17, 15, 0.45);
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.erip-control:hover,
+.erip-control:focus-visible {
+  border-color: rgba(255, 255, 255, 0.78);
+  background: rgba(7, 17, 15, 0.68);
+  outline: 0;
+  transform: translateY(-50%) scale(1.03);
+}
+
+.erip-control svg {
+  width: 18px;
+  height: 18px;
+}
+
+.erip-control-prev {
+  left: 12px;
+}
+
+.erip-control-next {
+  right: 12px;
+}
+
+.erip-progress {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.erip-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--aqua);
+}
+
+.erip-progress span.is-running {
+  animation: erip-progress var(--erip-duration, 4200ms) linear forwards;
+}
+
+.erip-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.erip-thumb {
+  overflow: hidden;
+  aspect-ratio: 1.45 / 1;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #f2f2ee;
+  cursor: pointer;
+  opacity: 0.62;
+  transition: border-color 160ms ease, opacity 160ms ease, transform 160ms ease;
+}
+
+.erip-thumb:hover,
+.erip-thumb:focus-visible,
+.erip-thumb.is-active {
+  border-color: rgba(28, 129, 114, 0.62);
+  opacity: 1;
+  outline: 0;
+}
+
+.erip-thumb:focus-visible {
+  transform: translateY(-1px);
+}
+
+.erip-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.04) brightness(0.96);
+}
+
+@keyframes erip-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
 .scrolly-section {
   position: relative;
   padding: 82px max(22px, calc((100vw - 1120px) / 2));
@@ -540,8 +650,6 @@ p {
 }
 
 .process-heading {
-  position: sticky;
-  top: 112px;
   display: grid;
   align-content: start;
   grid-column: 1;
@@ -1222,6 +1330,10 @@ p {
     grid-column: auto;
   }
 
+  .erip-thumbnails {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .program-pyramid {
     max-width: 620px;
     grid-template-columns: 1fr;
@@ -1408,6 +1520,11 @@ p {
 
   .process-steps {
     grid-template-columns: 1fr;
+  }
+
+  .erip-control {
+    width: 32px;
+    height: 32px;
   }
 }
 

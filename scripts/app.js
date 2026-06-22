@@ -26,6 +26,30 @@
           `
           )
           .join("")}
+        <button class="erip-control erip-control-prev" type="button" aria-label="Show previous ER-IP image">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="erip-control erip-control-next" type="button" aria-label="Show next ER-IP image">
+          <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="erip-progress" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="erip-thumbnails" aria-label="ER-IP image thumbnails">
+        ${content.eripSlides
+          .map(
+            (slide, index) => `
+            <button
+              class="erip-thumb ${index === 0 ? "is-active" : ""}"
+              type="button"
+              data-slide-target="${index}"
+              aria-label="Show ${slide.label}"
+              aria-current="${index === 0 ? "true" : "false"}"
+            >
+              <img src="${slide.fallback}" alt="" loading="lazy" />
+            </button>
+          `
+          )
+          .join("")}
       </div>
     `;
 
@@ -194,23 +218,60 @@
     if (!root) return;
 
     const slides = Array.from(root.querySelectorAll(".erip-slide"));
+    const thumbs = Array.from(root.querySelectorAll(".erip-thumb"));
+    const progress = root.querySelector(".erip-progress span");
+    const previous = root.querySelector(".erip-control-prev");
+    const next = root.querySelector(".erip-control-next");
     if (slides.length < 2) return;
 
     let activeIndex = 0;
     let timerId = null;
+    const intervalMs = 4200;
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const setActive = (index) => {
-      activeIndex = index;
+      activeIndex = (index + slides.length) % slides.length;
       slides.forEach((slide, slideIndex) => slide.classList.toggle("is-active", slideIndex === activeIndex));
+      thumbs.forEach((thumb, thumbIndex) => {
+        const isActive = thumbIndex === activeIndex;
+        thumb.classList.toggle("is-active", isActive);
+        thumb.setAttribute("aria-current", String(isActive));
+      });
+
+      if (!progress) return;
+      progress.classList.remove("is-running");
+      progress.style.transform = prefersReducedMotion ? "scaleX(1)" : "scaleX(0)";
+      if (!prefersReducedMotion) {
+        void progress.offsetWidth;
+        progress.classList.add("is-running");
+      }
     };
 
     const queueNext = () => {
       if (prefersReducedMotion) return;
       window.clearInterval(timerId);
-      timerId = window.setInterval(() => setActive((activeIndex + 1) % slides.length), 4200);
+      timerId = window.setInterval(() => setActive(activeIndex + 1), intervalMs);
     };
 
+    previous.addEventListener("click", () => {
+      setActive(activeIndex - 1);
+      queueNext();
+    });
+
+    next.addEventListener("click", () => {
+      setActive(activeIndex + 1);
+      queueNext();
+    });
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        setActive(Number(thumb.dataset.slideTarget));
+        queueNext();
+      });
+    });
+
+    if (progress) progress.style.setProperty("--erip-duration", `${intervalMs}ms`);
+    setActive(0);
     queueNext();
   }
 
