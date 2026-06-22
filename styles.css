@@ -197,8 +197,8 @@ canvas {
   z-index: 1;
   content: "";
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(3, 8, 7, 0.82) 64%, rgba(7, 17, 15, 0.42) 84%, rgba(7, 17, 15, 0.16) 100%),
-    linear-gradient(180deg, rgba(7, 17, 15, 0.12) 0%, rgba(7, 17, 15, 0.5) 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.98) 35%, rgba(3, 8, 7, 0.74) 52%, rgba(7, 17, 15, 0.34) 76%, rgba(7, 17, 15, 0.12) 100%),
+    linear-gradient(180deg, rgba(7, 17, 15, 0.1) 0%, rgba(7, 17, 15, 0.42) 100%);
 }
 
 .hero-inner {
@@ -1291,8 +1291,8 @@ p {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 50%, rgba(0, 0, 0, 0.66) 74%, rgba(0, 0, 0, 0.48) 100%),
-      linear-gradient(180deg, rgba(7, 17, 15, 0.26) 0%, rgba(7, 17, 15, 0.5) 100%);
+      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 35%, rgba(0, 0, 0, 0.68) 58%, rgba(0, 0, 0, 0.42) 100%),
+      linear-gradient(180deg, rgba(7, 17, 15, 0.18) 0%, rgba(7, 17, 15, 0.42) 100%);
   }
 
   .erip-platform-layout,
@@ -1384,16 +1384,17 @@ p {
 
   .hero::before {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 50%, rgba(0, 0, 0, 0.66) 74%, rgba(0, 0, 0, 0.48) 100%),
-      linear-gradient(180deg, rgba(7, 17, 15, 0.1) 0%, rgba(7, 17, 15, 0.26) 100%);
+      linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 35%, rgba(0, 0, 0, 0.68) 58%, rgba(0, 0, 0, 0.38) 100%),
+      linear-gradient(180deg, rgba(7, 17, 15, 0.06) 0%, rgba(7, 17, 15, 0.22) 100%);
   }
 
   .hero-copy {
-    width: min(330px, 86vw);
+    width: min(360px, 100%);
+    margin: 0 auto;
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 37px;
     line-height: 1;
   }
 
@@ -1413,6 +1414,7 @@ p {
 
   .hero-lede {
     margin-top: 18px;
+    font-size: 15px;
     line-height: 1.55;
   }
 
@@ -1454,6 +1456,11 @@ p {
     margin-top: 4px;
     font-size: 10px;
     line-height: 1.25;
+  }
+
+  .erip-thumbnails {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
   }
 
   .process-step {
