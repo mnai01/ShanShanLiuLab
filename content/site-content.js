@@ -51,50 +51,50 @@ window.LAB_CONTENT = {
   ],
   processSteps: [
     {
-      short: "ER-IP",
-      title: "Capture the ER",
-      detail:
-        "An EMC3-based ER tag supports rapid ER immunopurification for proteome, transcriptome, metabolome and lipidome measurements.",
-      visual: "purify",
-      link: "https://www.nature.com/articles/s41556-026-01922-y"
-    },
-    {
-      short: "Metabolome",
-      title: "Measure compartment chemistry",
-      detail:
-        "ER profiling resolves redox metabolites including GSH/GSSG, alongside UDP-sugars, nucleotides and lipid-associated metabolites.",
-      visual: "profile",
-      link: "https://www.nature.com/articles/s41556-026-01922-y"
-    },
-    {
       short: "Screen",
       title: "Create ER glutathione stress",
       detail:
-        "An ER-GshF stress model and ER-focused CRISPR screen identify SLC33A1 as a central regulator of ER glutathione homeostasis.",
+        "Create ER glutathione stress to identify SLC33A1.",
       visual: "screen",
       link: "https://www.nature.com/articles/s41556-026-01922-y"
     },
     {
-      short: "Transport",
-      title: "Test GSSG movement directly",
+      short: "ER-IP",
+      title: "Capture ER rapidly",
       detail:
-        "ER uptake and liposome counterflow assays support SLC33A1 as an ER-localized transporter for oxidized glutathione.",
+        "Capture ER rapidly for compartment-focused analysis.",
+      visual: "purify",
+      link: "https://www.nature.com/articles/s41556-026-01922-y"
+    },
+    {
+      short: "Metabolomics",
+      title: "Measure ER metabolite changes",
+      detail:
+        "Measure ER metabolite changes after genetic perturbation.",
+      visual: "profile",
+      link: "https://www.nature.com/articles/s41556-026-01922-y"
+    },
+    {
+      short: "Transport",
+      title: "Test substrate transport",
+      detail:
+        "Test substrate transport using biochemical reconstitution.",
       visual: "transport",
       link: "https://www.nature.com/articles/s41556-026-01922-y"
     },
     {
       short: "Structure",
-      title: "Resolve substrate recognition",
+      title: "Define substrate recognition",
       detail:
-        "Cryo-EM and molecular dynamics place GSSG in the SLC33A1 central cavity and identify transport-critical residues.",
+        "Define substrate recognition by cryo-EM.",
       visual: "structure",
       link: "https://www.nature.com/articles/s41556-026-01922-y"
     },
     {
       short: "Outcome",
-      title: "Link redox balance to proteostasis",
+      title: "Connect activity to ER function",
       detail:
-        "SLC33A1 loss drives ER GSSG accumulation, altered PDI oxidation, UPR signaling and dependency on ER-associated degradation.",
+        "Connect transporter activity to ER redox balance and protein maturation.",
       visual: "outcome",
       link: "https://www.nature.com/articles/s41556-026-01922-y"
     }
@@ -152,7 +152,7 @@ window.LAB_CONTENT = {
       alt: "Diagram showing balance between protein homeostasis and metabolite homeostasis in the ER.",
       link: "#program",
       body:
-        "A high-level model for how ER translation, folding, glycosylation, secretion, transporters, enzymes and metabolites are balanced."
+        "We study how the ER balances metabolite availability with core organelle functions, including protein folding, secretion, lipid synthesis, and calcium storage."
     },
     {
       title: "Forward and reverse genetics",
@@ -162,7 +162,7 @@ window.LAB_CONTENT = {
       alt: "Diagram showing reverse genetics with Cas9, ER-IP and metabolomics, and forward genetics with microbial enzymes and genetic screening.",
       link: "#program",
       body:
-        "A discovery loop connecting Cas9 perturbation, ER-IP metabolomics, microbe-derived enzymes and genetic screens."
+        "We combine reverse genetics with ER-IP metabolomics, and forward genetics with microbe-derived enzymes, to identify transporters, enzymes, and regulatory pathways that control ER metabolism."
     },
     {
       title: "PanERama",
@@ -172,7 +172,7 @@ window.LAB_CONTENT = {
       alt: "Diagram labeled PanERama showing conditional ER tag and Cre driver strategy across disease progression.",
       link: "#program",
       body:
-        "A future-facing ER-tag strategy for following tissue and disease progression contexts such as steatosis and neurodegeneration."
+        "Using ER-tagged mouse models generated in the lab, we will build ER-focused datasets of proteins and metabolites across tissues and disease states to reveal disease-associated changes and potential therapeutic insights."
     }
   ],
   publications: [
@@ -182,7 +182,7 @@ window.LAB_CONTENT = {
       journal: "Nature Cell Biology",
       year: "2026",
       doi: "10.1038/s41556-026-01922-y",
-      source: "PDF verified",
+      source: "Nature Cell Biology",
       link: "https://www.nature.com/articles/s41556-026-01922-y",
       image: {
         src: "assets/publication-slc33a1-sketch.webp",
@@ -197,7 +197,7 @@ window.LAB_CONTENT = {
       journal: "Science",
       year: "2023",
       doi: "10.1126/science.adf4154",
-      source: "Publication record verified",
+      source: "Science",
       link: "https://doi.org/10.1126/science.adf4154",
       featured: true
     },
@@ -207,7 +207,7 @@ window.LAB_CONTENT = {
       journal: "Cell Metabolism",
       year: "2021",
       doi: "10.1016/j.cmet.2021.06.013",
-      source: "DOI record",
+      source: "Cell Metabolism",
       link: "https://doi.org/10.1016/j.cmet.2021.06.013",
       image: {
         src: "assets/publication-cell-metabolism-2021-cover.webp",
@@ -222,35 +222,28 @@ window.LAB_CONTENT = {
       name: "Shanshan Liu, PhD",
       role: "Principal Investigator",
       summary:
-        "Yale-affiliated principal investigator building an independent lab focused on organelle metabolism, glutathione transport and redox control of proteostasis. Replace with the approved appointment title, biography and portrait."
-    },
-    {
-      initials: "+",
-      name: "First lab members",
-      role: "Recruiting placeholders",
-      summary:
-        "The site is structured for postdocs, graduate students, research assistants, summer students and alumni without making the launch-stage lab look empty."
+        "Shanshan Liu received her PhD from the National Institute of Biological Sciences, Beijing, where she studied how cells maintain NADH balance when mitochondrial respiration is impaired. She then completed postdoctoral training at Rockefeller University, where she developed approaches to study metabolism within the endoplasmic reticulum and identified mechanisms that link ER metabolite transport to organelle function. Her lab at Yale investigates how metabolic homeostasis is established, sensed, and regulated in the secretory pathway, and how its disruption contributes to disease."
     }
   ],
   roles: [
     {
       title: "Research assistants",
-      text: "For candidates who want rigorous training in cell biology, molecular biology, metabolomics, imaging or quantitative analysis."
+      text: "For candidates who want rigorous training in cell biology, genetics, molecular biology, metabolomics, and biochemical analysis."
     },
     {
       title: "Postdoctoral fellows",
-      text: "For scientists ready to lead mechanistic projects in organelle metabolism, transporter biology and disease-relevant stress states."
+      text: "For scientists ready to lead mechanistic projects in metabolism, transporter biology, and disease-relevant stress states."
     },
     {
       title: "Graduate and summer students",
-      text: "For trainees interested in building projects across genetics, biochemistry, cell biology and analytical technologies."
+      text: "For trainees interested in building projects across genetics, biochemistry, and analytical technologies."
     }
   ],
   news: [
     {
       date: "2026",
-      title: "Independent lab website in progress",
-      text: "Prototype redesigned around the SLC33A1 ER glutathione export story and future recruiting needs."
+      title: "Liu Lab website",
+      text: "The Liu Lab website introduces the lab's research program, platforms, selected publications, and recruiting information."
     },
     {
       date: "May 2026",
@@ -265,11 +258,8 @@ window.LAB_CONTENT = {
   ],
   contact: [
     ["Email", "shanshan.liu@yale.edu", "mailto:shanshan.liu@yale.edu"],
-    ["Affiliation", "Yale University affiliation placeholder", null],
+    ["Affiliation", "Department of Cell Biology, Yale School of Medicine", null],
     ["Google Scholar", "Scholar profile", "https://scholar.google.com/citations?user=nDvllAYAAAAJ&hl=en"],
-    ["ORCID", "0000-0001-8293-1025", "https://orcid.org/0000-0001-8293-1025"],
-    ["PubMed", "Publication search", "https://pubmed.ncbi.nlm.nih.gov/?term=Shanshan+Liu%5BAuthor%5D"],
-    ["Yale profile", "Add official profile when available", null],
-    ["GitHub", "Add lab GitHub when available", null]
+    ["ORCID", "0000-0001-8293-1025", "https://orcid.org/0000-0001-8293-1025"]
   ]
 };
