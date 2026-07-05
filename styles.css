@@ -213,7 +213,7 @@ canvas {
 }
 
 .hero-copy {
-  width: min(620px, 100%);
+  width: min(650px, 100%);
 }
 
 .eyebrow {
@@ -241,7 +241,7 @@ h3 {
 }
 
 h1 {
-  max-width: 620px;
+  max-width: 650px;
   font-size: 58px;
   line-height: 0.98;
 }
