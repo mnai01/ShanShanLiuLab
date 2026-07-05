@@ -145,7 +145,13 @@
       .map(
         (person) => `
         <article class="person-card">
-          <div class="avatar">${person.initials}</div>
+          ${
+            person.portrait
+              ? `<figure class="person-portrait">
+                  <img src="${person.portrait.src}" alt="${person.portrait.alt}" loading="lazy" />
+                </figure>`
+              : `<div class="avatar">${person.initials}</div>`
+          }
           <div>
             <span class="person-role">${person.role}</span>
             <h3>${person.name}</h3>

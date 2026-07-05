@@ -221,6 +221,10 @@ window.LAB_CONTENT = {
       initials: "SL",
       name: "Shanshan Liu, PhD",
       role: "Principal Investigator",
+      portrait: {
+        src: "assets/shanshan-liu-headshot.jpg",
+        alt: "Portrait of Shanshan Liu."
+      },
       summary:
         "Shanshan Liu received her PhD from the National Institute of Biological Sciences, Beijing, where she studied how cells maintain NADH balance when mitochondrial respiration is impaired. She then completed postdoctoral training at Rockefeller University, where she developed approaches to study metabolism within the endoplasmic reticulum and identified mechanisms that link ER metabolite transport to organelle function. Her lab at Yale investigates how metabolic homeostasis is established, sensed, and regulated in the secretory pathway, and how its disruption contributes to disease."
     }
