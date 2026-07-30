@@ -168,6 +168,15 @@
         <article class="role-card">
           <strong>${role.title}</strong>
           <p>${role.text}</p>
+          ${
+            role.link
+              ? `
+                <p class="role-link-row">
+                  <a class="role-link" href="${role.link}" target="_blank" rel="noreferrer">${role.linkText || "Detailed information can be found here."}</a>
+                </p>
+                `
+              : ""
+          }
         </article>
       `
       )
