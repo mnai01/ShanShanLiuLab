@@ -231,16 +231,20 @@ window.LAB_CONTENT = {
   ],
   roles: [
     {
-      title: "Research assistants",
-      text: "For candidates who want rigorous training in cell biology, genetics, molecular biology, metabolomics, and biochemical analysis."
+      title: "Postdoctoral associates",
+      text: "For scientists ready to lead mechanistic projects in metabolism, transporter biology, and disease-relevant stress states.",
+      link: "https://postdocs.yale.edu/posts/2026-07-23-postdoctoral-associate-position-in-er-metabolism-and-organelle-biology-liu-lab",
+      linkText: "Detailed information can be found here."
     },
     {
-      title: "Postdoctoral fellows",
-      text: "For scientists ready to lead mechanistic projects in metabolism, transporter biology, and disease-relevant stress states."
+      title: "PhD students",
+      text: "For students interested in building projects across genetics, biochemistry, and analytical technologies."
     },
     {
-      title: "Graduate and summer students",
-      text: "For trainees interested in building projects across genetics, biochemistry, and analytical technologies."
+      title: "Postgraduate associates, summer students, and undergraduates",
+      text: "For trainees seeking rigorous training in cell biology, genetics, molecular biology, metabolomics, biochemistry, and analytical technologies.",
+      link: "https://postdocs.yale.edu/posts/2026-07-23-postdoctoral-associate-position-in-er-metabolism-and-organelle-biology-liu-lab",
+      linkText: "Detailed information can be found here."
     }
   ],
   news: [
