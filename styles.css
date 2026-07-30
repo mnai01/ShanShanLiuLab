@@ -1127,6 +1127,22 @@ p {
   color: rgba(255, 255, 255, 0.65);
 }
 
+
+.role-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.58);
+  text-underline-offset: 3px;
+}
+
+
+.role-link:hover,
+.role-link:focus-visible {
+  text-decoration-color: #fff;
+  outline: 0;
+}
+
 .news-list {
   border-top: 1px solid var(--line);
 }
