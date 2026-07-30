@@ -243,7 +243,7 @@ window.LAB_CONTENT = {
     {
       title: "Postgraduate associates, summer students, and undergraduates",
       text: "For trainees seeking rigorous training in cell biology, genetics, molecular biology, metabolomics, biochemistry, and analytical technologies.",
-      link: "https://postdocs.yale.edu/posts/2026-07-23-postdoctoral-associate-position-in-er-metabolism-and-organelle-biology-liu-lab",
+      link: "https://postdocs.yale.edu/posts/2026-07-30-postgraduate-associate-position-in-er-metabolism-and-organelle-biology-liu-lab",
       linkText: "Detailed information can be found here."
     }
   ],
